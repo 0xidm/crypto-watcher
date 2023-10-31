@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+
+import os
+import logging
+
+from dotenv import load_dotenv
+load_dotenv()
+
+from crypto_watcher.watcher import CryptoWatcher
+
+
+if __name__ == "__main__":
+    watcher = CryptoWatcher()
+    watcher.run()
